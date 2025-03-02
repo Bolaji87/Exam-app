@@ -1,0 +1,23 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  gap: 30px;
+}
+.app h2 {
+  color: rgb(230, 95, 95);
+  font-weight: 700;
+}
+.btn {
+  background-color: blue;
+  color: #cabebe;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
