@@ -8,13 +8,13 @@
         "A programming language",
         "An operating system"
       ],
-      "correctAnswer": "A library for building user interfaces",
+      "correctAnswer": 0,
       "points": 5
     },
     {
       "question": "Which company developed React?",
       "options": ["Google", "Facebook", "Microsoft", "Apple"],
-      "correctAnswer": "Facebook",
+      "correctAnswer": 1,
       "points": 5
     },
     {
@@ -25,19 +25,19 @@
         "A database query language",
         "A CSS framework"
       ],
-      "correctAnswer": "A syntax extension for JavaScript",
+      "correctAnswer": 0,
       "points": 5
     },
     {
       "question": "What hook is used to manage state in a functional component?",
       "options": ["useEffect", "useContext", "useReducer", "useState"],
-      "correctAnswer": "useState",
+      "correctAnswer": 3,
       "points": 5
     },
     {
       "question": "Which method is used to update the state in a class component?",
       "options": ["setState", "updateState", "modifyState", "changeState"],
-      "correctAnswer": "setState",
+      "correctAnswer": 0,
       "points": 5
     },
     {
@@ -48,7 +48,7 @@
         "State lifting",
         "Virtual DOM"
       ],
-      "correctAnswer": "One-way data binding",
+      "correctAnswer": 0,
       "points": 5
     },
     {
@@ -59,24 +59,24 @@
         "To create new components",
         "To define styles"
       ],
-      "correctAnswer": "To handle side effects",
+      "correctAnswer": 0,
       "points": 5
     },
     {
       "question": "What is the Virtual DOM?",
       "options": [
-        "A lightweight copy of the actual DOM",
         "A separate HTML file",
         "A version of JavaScript",
+        "A lightweight copy of the actual DOM",
         "A new database model"
       ],
-      "correctAnswer": "A lightweight copy of the actual DOM",
+      "correctAnswer": 2,
       "points": 5
     },
     {
       "question": "Which hook is used for context API in React?",
-      "options": ["useContext", "useReducer", "useState", "useEffect"],
-      "correctAnswer": "useContext",
+      "options": ["useReducer", "useContext", "useState", "useEffect"],
+      "correctAnswer": 1,
       "points": 5
     },
     {
@@ -87,46 +87,46 @@
         "A part of Redux",
         "A database table"
       ],
-      "correctAnswer": "A function or class that returns JSX",
+      "correctAnswer": 0,
       "points": 5
     },
     {
       "question": "Which command is used to create a new React application?",
       "options": [
-        "npx create-react-app my-app",
         "npm install react",
         "react new my-app",
-        "npm start react"
+        "npm start react",
+        "npx create-react-app my-app"
       ],
-      "correctAnswer": "npx create-react-app my-app",
+      "correctAnswer": 3,
       "points": 5
     },
     {
       "question": "How do you pass data to a child component?",
       "options": ["Using props", "Using state", "Using Redux", "Using context"],
-      "correctAnswer": "Using props",
+      "correctAnswer": 0,
       "points": 5
     },
     {
       "question": "What is the purpose of keys in React lists?",
       "options": [
-        "To uniquely identify elements",
         "To sort elements",
         "To filter elements",
+        "To uniquely identify elements",
         "To map elements"
       ],
-      "correctAnswer": "To uniquely identify elements",
+      "correctAnswer": 2,
       "points": 5
     },
     {
       "question": "Which lifecycle method is called after a component is rendered?",
       "options": [
-        "componentDidMount",
         "componentDidUpdate",
+        "componentDidMount",
         "componentWillUnmount",
         "constructor"
       ],
-      "correctAnswer": "componentDidMount",
+      "correctAnswer": 1,
       "points": 5
     },
     {
@@ -137,30 +137,30 @@
         "Event listeners",
         "Server-side rendering"
       ],
-      "correctAnswer": "Virtual DOM",
+      "correctAnswer": 0,
       "points": 5
     },
     {
       "question": "What is the default state management solution for React?",
       "options": ["Redux", "React Context API", "MobX", "Vuex"],
-      "correctAnswer": "React Context API",
+      "correctAnswer": 1,
       "points": 5
     },
     {
       "question": "Which of these is NOT a valid React hook?",
       "options": ["useFetch", "useEffect", "useState", "useRef"],
-      "correctAnswer": "useFetch",
+      "correctAnswer": 0,
       "points": 5
     },
     {
       "question": "How do you handle events in React?",
       "options": [
-        "Using camelCase event handlers",
         "Using inline JavaScript",
         "Using traditional event listeners",
-        "Using jQuery"
+        "Using jQuery",
+        "Using camelCase event handlers"
       ],
-      "correctAnswer": "Using camelCase event handlers",
+      "correctAnswer": 3,
       "points": 5
     },
     {
@@ -171,13 +171,13 @@
         "To manage state",
         "To style components"
       ],
-      "correctAnswer": "To enable navigation between views",
+      "correctAnswer": 0,
       "points": 5
     },
     {
       "question": "Which of these is NOT a React framework?",
       "options": ["Next.js", "Gatsby", "Vue.js", "Remix"],
-      "correctAnswer": "Vue.js",
+      "correctAnswer": 2,
       "points": 5
     },
     {
@@ -188,13 +188,13 @@
         "To manage errors",
         "To optimize performance"
       ],
-      "correctAnswer": "To handle asynchronous operations",
+      "correctAnswer": 0,
       "points": 5
     },
     {
       "question": "Which package is used for state management in React?",
       "options": ["Redux", "Axios", "Lodash", "Bootstrap"],
-      "correctAnswer": "Redux",
+      "correctAnswer": 0,
       "points": 5
     },
     {
@@ -205,7 +205,7 @@
         "To fetch API data",
         "To store global variables"
       ],
-      "correctAnswer": "To create mutable references",
+      "correctAnswer": 0,
       "points": 5
     }
   ]
