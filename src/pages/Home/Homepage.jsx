@@ -1,13 +1,16 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import styles from "./Homepage.module.css";
-import AppLayout from "../AppLayout/AppLayout";
 
 function Homepage() {
   return (
     <div className={styles.home}>
       <Header />
-      <AppLayout />
+
+      <div className={styles.homeContent}>
+        <h2>Welcome to React Examination </h2>
+        <button className={styles.btn}>Start</button>
+      </div>
     </div>
   );
 }
