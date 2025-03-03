@@ -3,15 +3,18 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Homepage from "./pages/Home/Homepage";
 import AppLayout from "./pages/AppLayout/AppLayout";
+import { QuizProvider } from "./contexts/QuizContext";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/app" element={<AppLayout />} />
-      </Routes>
-    </BrowserRouter>
+    <QuizProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/app" element={<AppLayout />} />
+        </Routes>
+      </BrowserRouter>
+    </QuizProvider>
   );
 }
 

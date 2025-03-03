@@ -5,6 +5,7 @@ const QuizContext = createContext();
 const initialState = {
   questions: [],
   status: "loading",
+  index: 0,
 };
 
 // status : can be 'loading', 'error', 'ready', 'active' and 'finished'
@@ -13,8 +14,6 @@ function reducer(state, action) {
   switch (action.type) {
     case "dataReceived":
       return { ...state, questions: action.payload, status: "ready" };
-    case "begin":
-      return { ...state, status: "start", question: state.questions };
     case "dataFailed":
       return { ...state, error: action.payload, status: "error" };
     case "start":

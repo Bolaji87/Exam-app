@@ -3,3 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+.app {
+  background-color: #302525;
+  background-color: #e96b6b;
+  height: 100vh;
+  margin: 1rem;
+  padding: 0.5rem;
+}
