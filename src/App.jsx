@@ -1,23 +1,17 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { appRoutes } from "./Logic/routes";
+import Homepage from "./pages/Home/Homepage";
+import AppLayout from "./pages/AppLayout/AppLayout";
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Routes>
-          {appRoutes.map((route) => (
-            <Route
-              key={route.path}
-              path={route.path}
-              element={<route.component />}
-            />
-          ))}
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/app" element={<AppLayout />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
