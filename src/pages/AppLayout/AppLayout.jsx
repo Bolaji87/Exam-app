@@ -7,11 +7,12 @@ import Error from "../../UI/error/Error";
 import StartScreen from "../../components/start/StartScreen";
 import Question from "../../components/question/Questions";
 import { useQuiz } from "../../hooks/useQuiz";
+import styles from "./AppLayout.module.css";
 
 function AppLayout() {
   const { status } = useQuiz();
   return (
-    <div>
+    <div className={styles.app}>
       <Header />
       <Main>
         {status === "loading" && <Loader />}
