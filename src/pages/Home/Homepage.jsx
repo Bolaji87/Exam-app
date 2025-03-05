@@ -13,7 +13,7 @@ function Homepage() {
       <div className={styles.homeContent}>
         <h2>Welcome to React Examination </h2>
         <button onClick={() => navigate("/app")} className={styles.btn}>
-          Start
+          Open Exam
         </button>
       </div>
     </div>
