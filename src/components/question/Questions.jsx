@@ -4,7 +4,7 @@ import { useQuiz } from "../../hooks/useQuiz";
 import styles from "./Question.module.css";
 
 function Questions() {
-  const { questions, index, dispatch, answer } = useQuiz();
+  const { questions, index, dispatch, answer, numQuestions } = useQuiz();
   const question = questions.at(index);
 
   return (
@@ -24,11 +24,12 @@ function Questions() {
             Previous
           </button>
         )} */}
-        {answer !== null && (
+        {answer !== null && index < numQuestions - 1 && (
           <button onClick={() => dispatch({ type: "nextQuestion" })}>
             Next
           </button>
         )}
+        {index === numQuestions - 1 && <button>Finish</button>}
       </div>
     </div>
   );

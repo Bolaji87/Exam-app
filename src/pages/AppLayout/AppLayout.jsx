@@ -6,6 +6,8 @@ import Loader from "../../UI/loader/Loader";
 import Error from "../../UI/error/Error";
 import StartScreen from "../../components/start/StartScreen";
 import Question from "../../components/question/Questions";
+import FinishScreen from "../../components/finish/FinishScreen";
+
 import { useQuiz } from "../../hooks/useQuiz";
 import styles from "./AppLayout.module.css";
 
