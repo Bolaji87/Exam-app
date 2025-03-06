@@ -1,17 +1,24 @@
 import React from "react";
 import { useQuiz } from "../../hooks/useQuiz";
+
+import Button from "../../UI/Button";
 import styles from "./StartScreen.module.css";
 
 function StartScreen() {
   const { dispatch, numQuestions } = useQuiz();
   return (
     <div className={styles.startCont}>
-      <h2>Welcome to React Exam App 2025</h2>
+      <h2>React Exam 2025</h2>
       <p>
-        This exam contains {numQuestions} questions , where you can test your
-        knowledge based on what was covered so far in the course
+        This exam contains {numQuestions} questions , to test your knowledge
+        based on what has been covered so far in the course
       </p>
-      <button onClick={() => dispatch({ type: "start" })}>Start</button>
+      <Button
+        className={styles.btn}
+        onclick={() => dispatch({ type: "start" })}
+      >
+        Click to Start
+      </Button>
     </div>
   );
 }
