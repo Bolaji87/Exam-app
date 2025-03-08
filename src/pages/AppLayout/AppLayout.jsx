@@ -10,6 +10,7 @@ import FinishScreen from "../../components/finish/FinishScreen";
 
 import { useQuiz } from "../../hooks/useQuiz";
 import styles from "./AppLayout.module.css";
+import Button from "../../UI/Button";
 
 function AppLayout() {
   const { status } = useQuiz();
@@ -20,7 +21,15 @@ function AppLayout() {
         {status === "loading" && <Loader />}
         {status === "error" && <Error />}
         {status === "ready" && <StartScreen />}
-        {status === "active" && <Question />}
+        {status === "active" && (
+          <>
+            <Question />
+            <footer>
+              <Button>Next</Button>
+            </footer>
+          </>
+        )}
+        {status === "finishedExam" && <FinishScreen />}
       </Main>
     </div>
   );
